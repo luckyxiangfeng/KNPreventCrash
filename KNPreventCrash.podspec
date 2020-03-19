@@ -18,9 +18,9 @@ Pod::Spec.new do |spec|
 
   spec.author             = { "Ken" => "ulxiping@aliyun.com" }
   
-  spec.platform     = :ios, "8.0"
+  spec.platform     = :ios, "9.0"
   
-  spec.ios.deployment_target = "8.0"
+  spec.ios.deployment_target = "9.0"
   
   spec.source       = { :git => "https://github.com/luckyxiangfeng/KNPreventCrash.git", :tag => "#{spec.version}" }
 
