@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
                     iOS防止找不到对象或者空类型崩溃
                    DESC
 
-  spec.homepage     = "https://github.com/luckyxiangfeng/KNPreventCrash.git"
+  spec.homepage     = "https://github.com/luckyxiangfeng/KNPreventCrash"
 
   spec.license      = "MIT"
 
@@ -25,6 +25,6 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/luckyxiangfeng/KNPreventCrash.git", :tag => "#{spec.version}" }
 
   spec.source_files  = "KNPreventCrashDemo", "KNPreventCrashDemo/KNPreventCrashDemo/KNPreventCrash/*.{h,m}"
-  spec.frameworks = 'UIKit','Foundation','runtime'
+  spec.frameworks = 'UIKit','Foundation'
 
 end
