@@ -3,7 +3,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "KNPreventCrash"
-  spec.version      = "1.0.0"
+  spec.version      = "0.1.0"
   spec.summary      = "防止崩溃"
 
 
