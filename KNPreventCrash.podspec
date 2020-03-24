@@ -24,7 +24,7 @@ Pod::Spec.new do |spec|
   
   spec.source       = { :git => "https://github.com/luckyxiangfeng/KNPreventCrash.git", :tag => "#{spec.version}" }
 
- # spec.source_files  = "KNPreventCrash/*.{h,m}"
+  spec.source_files  = 'KNPreventCrash/*.{h,m}'
   
   spec.frameworks = 'UIKit','Foundation'
 
