@@ -3,7 +3,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "KNPreventCrash"
-  spec.version      = "0.1.1"
+  spec.version      = "1.0.0"
   spec.summary      = "防止崩溃"
 
 
@@ -24,11 +24,8 @@ Pod::Spec.new do |spec|
   
   spec.source       = { :git => "https://github.com/luckyxiangfeng/KNPreventCrash.git", :tag => "#{spec.version}" }
 
- # spec.source_files  = "KNPreventCrashDemo", "KNPreventCrashDemo/KNPreventCrashDemo/KNPreventCrash"
+ # spec.source_files  = “KNPreventCrash/*.{h,m}”
   
-  spec.subspec 'KNPreventCrash' do |ss|
-     ss.source_files = 'KNPreventCrashDemo/KNPreventCrash/*.{h,m}'
-   end
   spec.frameworks = 'UIKit','Foundation'
 
 end
