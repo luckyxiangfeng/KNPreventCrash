@@ -7,7 +7,6 @@
 //
 
 #import "TestViewController.h"
-
 @interface TestViewController ()
 
 @end
@@ -16,17 +15,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor redColor];
+    self.view.backgroundColor = [UIColor whiteColor];
+    NSMutableArray *array = [NSMutableArray array];
+    [array addObject:nil];
+    
+    [array removeObjectAtIndex:1];
+    
+    [array replaceObjectAtIndex:1 withObject:nil];
+    
+    NSArray *array1 = [NSArray array];
+    [array1 objectAtIndex:1];
+    
+    NSMutableDictionary *mutableDic = [NSMutableDictionary dictionary];
+    [mutableDic setObject:nil forKey:@"aaa"];
+    
+    [mutableDic removeObjectForKey:nil];
+    
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

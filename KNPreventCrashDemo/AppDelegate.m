@@ -19,9 +19,8 @@
     
     TestViewController *vc = [[TestViewController alloc] init];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = vc;
-    [self.window makeKeyWindow];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
