@@ -12,8 +12,8 @@
 		F73B4C6B241F437900EFCC08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73B4C69241F437900EFCC08 /* LaunchScreen.storyboard */; };
 		F73B4C6E241F437900EFCC08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F73B4C6D241F437900EFCC08 /* main.m */; };
 		F756F8C824234410009C75DD /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F756F8C724234410009C75DD /* TestViewController.m */; };
-		F7BDF0112429F59A006E56E6 /* KNSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BDF00D2429F59A006E56E6 /* KNSwizzling.m */; };
-		F7BDF0122429F59A006E56E6 /* NSMutableArray+PreventCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BDF00E2429F59A006E56E6 /* NSMutableArray+PreventCrash.m */; };
+		F7BDF0182429F72F006E56E6 /* KNSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BDF0142429F72E006E56E6 /* KNSwizzling.m */; };
+		F7BDF0192429F72F006E56E6 /* NSMutableArray+PreventCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BDF0152429F72E006E56E6 /* NSMutableArray+PreventCrash.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +26,10 @@
 		F73B4C6D241F437900EFCC08 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F756F8C624234410009C75DD /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		F756F8C724234410009C75DD /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
-		F7BDF00D2429F59A006E56E6 /* KNSwizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNSwizzling.m; sourceTree = "<group>"; };
-		F7BDF00E2429F59A006E56E6 /* NSMutableArray+PreventCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+PreventCrash.m"; sourceTree = "<group>"; };
-		F7BDF00F2429F59A006E56E6 /* KNSwizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSwizzling.h; sourceTree = "<group>"; };
-		F7BDF0102429F59A006E56E6 /* NSMutableArray+PreventCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+PreventCrash.h"; sourceTree = "<group>"; };
+		F7BDF0142429F72E006E56E6 /* KNSwizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNSwizzling.m; sourceTree = "<group>"; };
+		F7BDF0152429F72E006E56E6 /* NSMutableArray+PreventCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+PreventCrash.m"; sourceTree = "<group>"; };
+		F7BDF0162429F72E006E56E6 /* KNSwizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSwizzling.h; sourceTree = "<group>"; };
+		F7BDF0172429F72E006E56E6 /* NSMutableArray+PreventCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+PreventCrash.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 		F73B4C5A241F437800EFCC08 /* KNPreventCrashDemo */ = {
 			isa = PBXGroup;
 			children = (
-				F7BDF00C2429F59A006E56E6 /* KNPreventCrash */,
+				F7BDF0132429F72E006E56E6 /* KNPreventCrash */,
 				F73B4C5B241F437800EFCC08 /* AppDelegate.h */,
 				F73B4C5C241F437800EFCC08 /* AppDelegate.m */,
 				F73B4C67241F437900EFCC08 /* Assets.xcassets */,
@@ -75,16 +75,16 @@
 			path = KNPreventCrashDemo;
 			sourceTree = "<group>";
 		};
-		F7BDF00C2429F59A006E56E6 /* KNPreventCrash */ = {
+		F7BDF0132429F72E006E56E6 /* KNPreventCrash */ = {
 			isa = PBXGroup;
 			children = (
-				F7BDF00D2429F59A006E56E6 /* KNSwizzling.m */,
-				F7BDF00E2429F59A006E56E6 /* NSMutableArray+PreventCrash.m */,
-				F7BDF00F2429F59A006E56E6 /* KNSwizzling.h */,
-				F7BDF0102429F59A006E56E6 /* NSMutableArray+PreventCrash.h */,
+				F7BDF0142429F72E006E56E6 /* KNSwizzling.m */,
+				F7BDF0152429F72E006E56E6 /* NSMutableArray+PreventCrash.m */,
+				F7BDF0162429F72E006E56E6 /* KNSwizzling.h */,
+				F7BDF0172429F72E006E56E6 /* NSMutableArray+PreventCrash.h */,
 			);
 			path = KNPreventCrash;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -157,8 +157,8 @@
 			files = (
 				F73B4C5D241F437800EFCC08 /* AppDelegate.m in Sources */,
 				F73B4C6E241F437900EFCC08 /* main.m in Sources */,
-				F7BDF0112429F59A006E56E6 /* KNSwizzling.m in Sources */,
-				F7BDF0122429F59A006E56E6 /* NSMutableArray+PreventCrash.m in Sources */,
+				F7BDF0182429F72F006E56E6 /* KNSwizzling.m in Sources */,
+				F7BDF0192429F72F006E56E6 /* NSMutableArray+PreventCrash.m in Sources */,
 				F756F8C824234410009C75DD /* TestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
