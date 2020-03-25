@@ -17,6 +17,10 @@
 //        Class class1 = NSClassFromString(@"__NSDictionaryI");
         //交换设置数据方法
         [KNSwizzling swizzleInstanceSelector: @selector(setObject:forKey:) withSwizzledSelector:@selector(kn_setObject:forKey:) forClass:class];
+        
+        //交换设置数据方法,object为nil，dictionary会将key的关联的object移除
+        [KNSwizzling swizzleInstanceSelector: @selector(setObject:forKeyedSubscript:) withSwizzledSelector:@selector(kn_setObject:forKeyedSubscript:) forClass:class];
+        
         //交换移除索引方法
         [KNSwizzling swizzleInstanceSelector: @selector(removeObjectForKey:) withSwizzledSelector:@selector(kn_removeObjectForKey:) forClass:class];
     });
@@ -30,6 +34,18 @@
     }
     [self kn_setObject:anObject forKey:aKey];
 }
+
+-(void)kn_setObject:(id)obj forKeyedSubscript:(id<NSCopying>)key{
+    if (!key){
+#ifdef DEBUG
+        NSLog(@"Ken：key为空，已为你处理崩溃 %@",[self superclass]);
+#endif
+         return;
+    }
+    
+    [self kn_setObject:obj forKeyedSubscript:key];
+}
+
 - (void)kn_removeObjectForKey:(id)aKey{
     if (!aKey) {
 #ifdef DEBUG

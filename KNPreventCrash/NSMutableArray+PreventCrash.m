@@ -28,7 +28,7 @@
 
 - (void)kn_insertObject:(id)anObject atIndex:(NSUInteger)index{
     
-    if (anObject==nil){
+    if (!anObject){
 #ifdef DEBUG
         NSLog(@"Ken：数组插入数据为空，已帮你处理崩溃 %@",[self superclass]);
 #endif

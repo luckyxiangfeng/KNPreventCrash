@@ -12,8 +12,10 @@
 		F73B4C6B241F437900EFCC08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73B4C69241F437900EFCC08 /* LaunchScreen.storyboard */; };
 		F73B4C6E241F437900EFCC08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F73B4C6D241F437900EFCC08 /* main.m */; };
 		F756F8C824234410009C75DD /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F756F8C724234410009C75DD /* TestViewController.m */; };
+		F7AAF05A242A5279001AB9F1 /* NSMutableArray+PreventCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BDF0152429F72E006E56E6 /* NSMutableArray+PreventCrash.m */; };
+		F7AAF060242A5FDA001AB9F1 /* NSString+PreventCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = F7AAF05F242A5FDA001AB9F1 /* NSString+PreventCrash.m */; };
+		F7AAF063242A61CC001AB9F1 /* NSMutableString+PreventCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = F7AAF062242A61CC001AB9F1 /* NSMutableString+PreventCrash.m */; };
 		F7BDF0182429F72F006E56E6 /* KNSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BDF0142429F72E006E56E6 /* KNSwizzling.m */; };
-		F7BDF0192429F72F006E56E6 /* NSMutableArray+PreventCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BDF0152429F72E006E56E6 /* NSMutableArray+PreventCrash.m */; };
 		F7BDF01C242A09DB006E56E6 /* NSArray+PreventCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BDF01B242A09DB006E56E6 /* NSArray+PreventCrash.m */; };
 		F7BDF01F242A0B07006E56E6 /* NSMutableDictionary+PreventCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BDF01E242A0B07006E56E6 /* NSMutableDictionary+PreventCrash.m */; };
 /* End PBXBuildFile section */
@@ -28,6 +30,10 @@
 		F73B4C6D241F437900EFCC08 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F756F8C624234410009C75DD /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		F756F8C724234410009C75DD /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		F7AAF05E242A5FDA001AB9F1 /* NSString+PreventCrash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+PreventCrash.h"; sourceTree = "<group>"; };
+		F7AAF05F242A5FDA001AB9F1 /* NSString+PreventCrash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+PreventCrash.m"; sourceTree = "<group>"; };
+		F7AAF061242A61CC001AB9F1 /* NSMutableString+PreventCrash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+PreventCrash.h"; sourceTree = "<group>"; };
+		F7AAF062242A61CC001AB9F1 /* NSMutableString+PreventCrash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+PreventCrash.m"; sourceTree = "<group>"; };
 		F7BDF0142429F72E006E56E6 /* KNSwizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNSwizzling.m; sourceTree = "<group>"; };
 		F7BDF0152429F72E006E56E6 /* NSMutableArray+PreventCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+PreventCrash.m"; sourceTree = "<group>"; };
 		F7BDF0162429F72E006E56E6 /* KNSwizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSwizzling.h; sourceTree = "<group>"; };
@@ -92,6 +98,10 @@
 				F7BDF0152429F72E006E56E6 /* NSMutableArray+PreventCrash.m */,
 				F7BDF01D242A0B07006E56E6 /* NSMutableDictionary+PreventCrash.h */,
 				F7BDF01E242A0B07006E56E6 /* NSMutableDictionary+PreventCrash.m */,
+				F7AAF05E242A5FDA001AB9F1 /* NSString+PreventCrash.h */,
+				F7AAF05F242A5FDA001AB9F1 /* NSString+PreventCrash.m */,
+				F7AAF061242A61CC001AB9F1 /* NSMutableString+PreventCrash.h */,
+				F7AAF062242A61CC001AB9F1 /* NSMutableString+PreventCrash.m */,
 			);
 			path = KNPreventCrash;
 			sourceTree = SOURCE_ROOT;
@@ -165,12 +175,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7AAF063242A61CC001AB9F1 /* NSMutableString+PreventCrash.m in Sources */,
+				F7AAF05A242A5279001AB9F1 /* NSMutableArray+PreventCrash.m in Sources */,
 				F73B4C5D241F437800EFCC08 /* AppDelegate.m in Sources */,
+				F7AAF060242A5FDA001AB9F1 /* NSString+PreventCrash.m in Sources */,
 				F73B4C6E241F437900EFCC08 /* main.m in Sources */,
 				F7BDF0182429F72F006E56E6 /* KNSwizzling.m in Sources */,
 				F7BDF01C242A09DB006E56E6 /* NSArray+PreventCrash.m in Sources */,
 				F7BDF01F242A0B07006E56E6 /* NSMutableDictionary+PreventCrash.m in Sources */,
-				F7BDF0192429F72F006E56E6 /* NSMutableArray+PreventCrash.m in Sources */,
 				F756F8C824234410009C75DD /* TestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
